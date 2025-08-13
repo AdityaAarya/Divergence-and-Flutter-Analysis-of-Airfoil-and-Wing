@@ -41,6 +41,8 @@ The scripts were run with specific values to demonstrate their functionality. Be
 - **model1_2_3.m** - Model 1 (Quasi-Static)
 For the quasi-static model, the following critical speeds were computed:
 
+  ![model123](model123.png)
+
   - Divergence speed: **59.15 m/s**
 
   - Flutter speed: **21.35 m/s**
@@ -50,13 +52,18 @@ The output plots for this model, and the flutter_real_discrete.m and flutter_rea
 - **flutter_real.m** (Goland Wing)
 This script, when run with a sweep angle of **30 degrees** and the specified Goland wing parameters, produced a flutter speed of approximately **420.1 m/s**.
 
+  ![continuous](flutterreal.png)
+
 - **flutter_real_discrete.m** (Discrete Airfoil)
 Using the parameters specified in the script, the flutter speed was found to be approximately **23.9 m/s**.
+
+  ![Discrete](flutterrealdiscrte.png)
 
 The flutter_real_discrete.m and flutter_real.m scripts both implement fully unsteady loads based on the Theodorsen theory and use a method similar to the V-g method for solving the aeroelastic equations.
 
 - **amplitude_vs_U.m** (Time-Domain Response)
 This script was used to simulate the oscillatory response at three different airspeeds, demonstrating the change in system stability:
+  ![Speed Variation](amplitudeVsUm.png)
 
   - U = 5 m/s: The response shows a stable, damped oscillation.
 
@@ -69,9 +76,15 @@ In addition to the primary analysis, several parametric studies were conducted t
 
 - **Variation of Reversal Dynamic Pressure with Mach Number**: A study on how the dynamic pressure at which aileron reversal occurs changes with increasing Mach number.
 
+  ![qRVsM](qRwithMachNo.png)
+
 - **Lift Effectiveness with Different Sweep Angles**: An analysis of the effect of wing sweep on the lift effectiveness, demonstrating how sweep can alter the aeroelastic behavior.
 
+  ![nVsQforSweep](effectivenessfordifferentSweep.png)
+
 - **Divergence Speed vs. Sweep Angles for Varying Mach Number**: A comprehensive study that plots the divergence speed against the wing sweep angle, showing how this relationship is influenced by different flight Mach numbers.
+
+  ![DivergenceatSweep](DivergenceatdifferentSweepforMachNo.png)
 
 ## Getting Started
 To run these scripts, you will need a MATLAB environment.
